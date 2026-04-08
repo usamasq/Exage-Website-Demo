@@ -3,15 +3,15 @@ import { motion } from 'motion/react';
 
 export default function Contact() {
   return (
-    <section className="py-40 px-8 lg:px-24 bg-surface-container-lowest relative z-20">
+    <section className="py-20 md:py-40 px-6 md:px-8 lg:px-24 bg-surface-container-lowest relative z-20">
       <div className="max-w-6xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-20 items-start">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
           <div>
             <span className="font-label text-primary font-bold tracking-[0.4em] uppercase mb-6 text-sm block">Transmission Channel</span>
-            <h2 className="font-headline text-5xl md:text-6xl font-extrabold tracking-tighter mb-8 leading-none">
+            <h2 className="font-headline text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tighter mb-6 md:mb-8 leading-none">
               READY TO <br /> <span className="text-glow text-primary">ARCHITECT?</span>
             </h2>
-            <p className="font-body text-xl text-outline mb-12 leading-relaxed">
+            <p className="font-body text-lg md:text-xl text-outline mb-8 md:mb-12 leading-relaxed">
               Secure your position in the digital vanguard. Our strategists are standing by to decode your organizational requirements.
             </p>
             
@@ -35,7 +35,7 @@ export default function Contact() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="glass-panel p-10 border border-white/5 relative overflow-hidden group"
+            className="glass-panel p-6 md:p-10 border border-white/5 relative overflow-hidden group"
           >
             <div className="absolute top-0 right-0 w-40 h-40 bg-primary/5 blur-3xl -translate-y-1/2 translate-x-1/2"></div>
             

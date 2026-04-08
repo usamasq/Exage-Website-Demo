@@ -23,7 +23,7 @@ const impacts = [
 
 export default function Impact() {
   return (
-    <section className="relative py-32 overflow-hidden bg-[#0b0b0b]" style={{ 
+    <section className="relative py-20 md:py-32 overflow-hidden bg-[#0b0b0b]" style={{ 
       backgroundImage: `radial-gradient(circle at center, rgba(127, 57, 251, 0.05) 0%, transparent 70%), linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px)`,
       backgroundSize: '100% 100%, 40px 40px, 40px 40px'
     }}>
@@ -36,10 +36,10 @@ export default function Impact() {
         />
       </div>
       
-      <div className="relative z-10 px-8 lg:px-20 grid lg:grid-cols-2 gap-20 items-center">
+      <div className="relative z-10 px-6 md:px-8 lg:px-20 grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
         <div>
-          <h2 className="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter mb-12">360° VALUE <br /> GENERATION</h2>
-          <div className="space-y-12 pl-4">
+          <h2 className="font-headline text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tighter mb-8 md:mb-12">360° VALUE <br /> GENERATION</h2>
+          <div className="space-y-8 md:space-y-12 pl-0 md:pl-4">
             {impacts.map((impact, index) => (
               <motion.div 
                 key={index}
@@ -47,11 +47,11 @@ export default function Impact() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.2 }}
-                className="flex gap-8"
+                className="flex flex-col sm:flex-row gap-4 sm:gap-8"
               >
-                <span className={`font-headline text-4xl font-black ${impact.color} text-glow min-w-[60px]`}>{impact.id}</span>
+                <span className={`font-headline text-3xl md:text-4xl font-black ${impact.color} text-glow min-w-[60px]`}>{impact.id}</span>
                 <div>
-                  <h4 className="font-headline text-xl font-bold mb-2 uppercase tracking-tight">{impact.title}</h4>
+                  <h4 className="font-headline text-lg md:text-xl font-bold mb-2 uppercase tracking-tight">{impact.title}</h4>
                   <p className="text-outline text-sm">{impact.description}</p>
                 </div>
               </motion.div>
@@ -70,14 +70,14 @@ export default function Impact() {
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="absolute inset-4 glass-panel border border-white/10 flex flex-col items-center justify-center text-center p-12 shadow-2xl backdrop-blur-3xl bg-black/40"
+            className="absolute inset-4 glass-panel border border-white/10 flex flex-col items-center justify-center text-center p-6 md:p-12 shadow-2xl backdrop-blur-3xl bg-black/40"
           >
             <div className="absolute inset-0 border border-white/5 pointer-events-none"></div>
-            <span className="font-label text-xs tracking-[0.6em] uppercase mb-4 text-outline/80">Total Impact</span>
-            <div className="font-headline text-8xl font-black text-on-background tracking-tighter drop-shadow-2xl">
+            <span className="font-label text-[10px] md:text-xs tracking-[0.6em] uppercase mb-2 md:mb-4 text-outline/80">Total Impact</span>
+            <div className="font-headline text-6xl md:text-8xl font-black text-on-background tracking-tighter drop-shadow-2xl">
               <span className="text-primary">$</span>4.2B
             </div>
-            <p className="text-primary font-bold tracking-[0.3em] text-xs uppercase mt-6 opacity-80">Value Delivered 2023</p>
+            <p className="text-primary font-bold tracking-[0.2em] md:tracking-[0.3em] text-[10px] md:text-xs uppercase mt-4 md:mt-6 opacity-80">Value Delivered 2023</p>
           </motion.div>
         </div>
       </div>

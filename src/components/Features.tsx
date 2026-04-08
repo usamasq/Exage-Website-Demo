@@ -30,7 +30,7 @@ const features = [
 
 export default function Features() {
   return (
-    <section className="py-40 px-8 lg:px-24 bg-surface-container-lowest relative z-20 -mt-20">
+    <section className="py-20 md:py-40 px-6 md:px-8 lg:px-24 bg-surface-container-lowest relative z-20 md:-mt-20">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {features.map((feature, index) => (
           <motion.div 
@@ -39,7 +39,7 @@ export default function Features() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="tactile-realism p-12 transition-all duration-500 group relative overflow-hidden"
+            className="tactile-realism p-8 md:p-12 transition-all duration-500 group relative overflow-hidden"
           >
             <div className={`absolute top-0 right-0 w-24 h-24 ${feature.accent === 'purple' ? 'bg-primary/5' : 'bg-secondary/5'} blur-3xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity`}></div>
             <div className="mb-10 relative">

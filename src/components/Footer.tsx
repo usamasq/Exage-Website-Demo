@@ -2,12 +2,12 @@ import { Share2, Globe, Bot } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="w-full border-t border-outline-variant/15 bg-surface-container-lowest pt-24 pb-12 px-8 lg:px-20">
+    <footer className="w-full border-t border-outline-variant/15 bg-surface-container-lowest pt-16 md:pt-24 pb-12 px-6 md:px-8 lg:px-20">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-12 mb-20">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10 md:gap-12 mb-16 md:mb-20">
           {/* Branding Column */}
           <div className="col-span-2 lg:col-span-2">
-            <span className="text-3xl font-black tracking-tighter text-on-background font-headline uppercase block mb-6">EXAGE</span>
+            <img src="/logo.svg" alt="EXAGE" className="h-8 object-contain mb-6" />
             <p className="text-outline text-sm leading-relaxed max-w-xs mb-8">
               Synthesizing intelligence and imagination to build the infrastructures of the future. Registered globally, operating at scale.
             </p>

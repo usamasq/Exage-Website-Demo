@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[921px] flex items-center overflow-hidden px-8 lg:px-20">
+    <section className="relative min-h-[100svh] md:min-h-[921px] flex items-center overflow-hidden px-6 md:px-8 lg:px-20 pt-24 md:pt-0">
       <div className="absolute inset-0 z-0">
         <img 
           alt="Cyber-Humanism: A cinematic digital neural network interaction" 
@@ -28,7 +28,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="font-headline text-6xl md:text-8xl font-extrabold leading-[0.9] tracking-tighter text-on-background mb-8"
+          className="font-headline text-5xl sm:text-6xl md:text-8xl font-extrabold leading-[0.9] tracking-tighter text-on-background mb-8"
         >
           REIMAGINE YOUR <br /> BUSINESS FOR THE <br /> 
           <span className="text-primary text-glow">DIGITAL TOMORROW</span>
@@ -47,14 +47,14 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="flex flex-col sm:flex-row gap-6"
+          className="flex flex-col sm:flex-row gap-4 sm:gap-6"
         >
-          <button className="cyber-gradient text-on-primary px-10 py-5 font-headline font-black uppercase tracking-widest text-lg hover:shadow-[0_0_30px_rgba(159,0,252,0.4)] transition-all">
+          <button className="cyber-gradient text-on-primary px-8 md:px-10 py-4 md:py-5 font-headline font-black uppercase tracking-widest text-base md:text-lg hover:shadow-[0_0_30px_rgba(159,0,252,0.4)] transition-all">
             Initiate Strategy
           </button>
-          <button className="group flex items-center gap-4 px-10 py-5 border border-outline/20 hover:bg-surface-bright transition-all">
-            <span className="font-headline font-bold uppercase tracking-widest text-lg">View Portfolio</span>
-            <ArrowRight className="group-hover:translate-x-2 transition-transform w-6 h-6" />
+          <button className="group flex items-center justify-center gap-4 px-8 md:px-10 py-4 md:py-5 border border-outline/20 hover:bg-surface-bright transition-all">
+            <span className="font-headline font-bold uppercase tracking-widest text-base md:text-lg">View Portfolio</span>
+            <ArrowRight className="group-hover:translate-x-2 transition-transform w-5 h-5 md:w-6 md:h-6" />
           </button>
         </motion.div>
       </div>
